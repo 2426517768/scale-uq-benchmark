@@ -1,0 +1,53 @@
+{
+  "id": "CopperETF",
+  "ticker": "CPER",
+  "class": "commodity",
+  "instrument": "Copper futures fund proxy, adjusted prices; split-adjusted price returns, cash distributions excluded",
+  "synthetic": false,
+  "sha256": "2678f497d9f591dffcb2d929801c4270ed3e33517720940e7007b7ec9575edea",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "CopperETF",
+    "instrument": "Copper futures fund proxy, adjusted prices; split-adjusted price returns, cash distributions excluded",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "CPER",
+    "affine_qfq_max_abs_residual": 0.0,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2011-11-15",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [
+      "2015-08-06",
+      "2015-09-18",
+      "2018-03-20",
+      "2018-06-07"
+    ],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "e323848a0679d2857638a012b6b087d965c2e97e739e796d7453501c2b10328d",
+      "qfq": "e323848a0679d2857638a012b6b087d965c2e97e739e796d7453501c2b10328d",
+      "qfq_factors": "b0c5841902317fafddc7bac90582ce6f416ae0ac4ba0c888252527515e00a6c0"
+    },
+    "rows": 3474,
+    "first": "2011-11-15",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/CopperETF.csv",
+    "candidate_sha256": "2678f497d9f591dffcb2d929801c4270ed3e33517720940e7007b7ec9575edea"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

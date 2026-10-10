@@ -1,0 +1,48 @@
+{
+  "id": "GoldETF",
+  "ticker": "GLD",
+  "class": "commodity",
+  "instrument": "Gold ETF proxy, adjusted prices; split-adjusted price returns, cash distributions excluded",
+  "synthetic": false,
+  "sha256": "9cde1dde21963c9ade2a823c792dca8cdeb2922bfd195dca9a53b61e95ef6115",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "GoldETF",
+    "instrument": "Gold ETF proxy, adjusted prices; split-adjusted price returns, cash distributions excluded",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "GLD",
+    "affine_qfq_max_abs_residual": 0.0,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2004-11-18",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "7c7d98127280fb43623be59bdb8f44b2b27a781f6a26dc904dd95bf3b7d1f737",
+      "qfq": "7c7d98127280fb43623be59bdb8f44b2b27a781f6a26dc904dd95bf3b7d1f737",
+      "qfq_factors": "b0c5841902317fafddc7bac90582ce6f416ae0ac4ba0c888252527515e00a6c0"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/GoldETF.csv",
+    "candidate_sha256": "9cde1dde21963c9ade2a823c792dca8cdeb2922bfd195dca9a53b61e95ef6115"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

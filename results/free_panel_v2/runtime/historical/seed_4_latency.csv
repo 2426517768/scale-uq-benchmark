@@ -1,0 +1,6 @@
+method,calls,median_ms,p95_ms,scope
+GaussianTCN,100,2.462150005158037,4.079099977388978,one window to normalized prediction and quantiles; includes CPU transfer
+MCDropout,100,32.878350000828505,37.321370001882315,one window to normalized prediction and quantiles; includes CPU transfer
+DeepEnsembles,100,12.229299987666309,15.92705007060431,one window to normalized prediction and quantiles; includes CPU transfer
+Evidential,100,2.7625499642454088,4.0356249490287155,one window to normalized prediction and quantiles; includes CPU transfer
+SCALE-R,100,3.9460500120185316,5.983579915482551,one window to normalized prediction and quantiles; includes CPU transfer

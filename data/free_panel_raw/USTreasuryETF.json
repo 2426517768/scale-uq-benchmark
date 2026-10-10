@@ -1,0 +1,48 @@
+{
+  "id": "USTreasuryETF",
+  "ticker": "IEF",
+  "class": "fixed_income",
+  "instrument": "US 7-10 year Treasury ETF, adjusted prices; not a yield series; split-adjusted price returns, cash distributions excluded",
+  "synthetic": false,
+  "sha256": "962f1cb7561c79d365ff017fc241225aaf26639e17635ab865c315bf67c822a9",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "USTreasuryETF",
+    "instrument": "US 7-10 year Treasury ETF, adjusted prices; not a yield series; split-adjusted price returns, cash distributions excluded",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "IEF",
+    "affine_qfq_max_abs_residual": 4.977279999707207e-05,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2017-08-07",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "5718166b3c2363b6f59945b30db10ccfa15612dd76d9378aaa58fba3a329c46d",
+      "qfq": "f741009718bc8efa892300636a0623014a8324b193c3f16482f9940761d4a511",
+      "qfq_factors": "741cbcd5e295d3cf359286ffc14175afa9f5d70408706b1bd6498775868d0579"
+    },
+    "rows": 2113,
+    "first": "2017-08-07",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/USTreasuryETF.csv",
+    "candidate_sha256": "962f1cb7561c79d365ff017fc241225aaf26639e17635ab865c315bf67c822a9"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "OilETF",
+  "ticker": "USO",
+  "class": "commodity",
+  "instrument": "Oil futures fund proxy, adjusted prices; not a spot WTI series; split-adjusted price returns, cash distributions excluded",
+  "synthetic": false,
+  "sha256": "98b807d7969344666df6745feb8bb17891aabbfa8736e2b6a1000d9bf3723d30",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "OilETF",
+    "instrument": "Oil futures fund proxy, adjusted prices; not a spot WTI series; split-adjusted price returns, cash distributions excluded",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "USO",
+    "affine_qfq_max_abs_residual": 0.0,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2006-04-10",
+        "factor": 8.0
+      },
+      {
+        "date": "2020-04-29",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "5d12802cd19bd56416319fb5dff7bc15e2d2b007e54b60159186f6dce9522057",
+      "qfq": "b7da286560d1177ff9c7cf68b23b192981ebf804971a73da353d7fc65cb8b237",
+      "qfq_factors": "d91662fe4dd7cdc4d815c3f517e906c8085a35a815d839eb338d5bef12752666"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/OilETF.csv",
+    "candidate_sha256": "98b807d7969344666df6745feb8bb17891aabbfa8736e2b6a1000d9bf3723d30"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

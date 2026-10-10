@@ -1,0 +1,27 @@
+[
+  {
+    "component": "manifest.json",
+    "identical_to_previous_upload": true,
+    "sha256": "511a7b771d8f9a868f1f88d5331683ab0eef9861b8e9e410720079c1b2164a57"
+  },
+  {
+    "component": "RUN_COMPLETE.json",
+    "identical_to_previous_upload": true,
+    "sha256": "a097d00a214322e94bff97ed1777c64603ac0ccec6e6b04eab4c72a672332cf9"
+  },
+  {
+    "component": "metrics_wide.csv",
+    "identical_to_previous_upload": true,
+    "sha256": "01010fb7c4756728dda2f5756cd8a476dadc81b2bd6705e9873bc1dc2d067766"
+  },
+  {
+    "component": "macro_mean_sd.csv",
+    "identical_to_previous_upload": true,
+    "sha256": "fc4e69215a0f6c29822213baf50ffe955da98b9bea4d9cf844ef9bb4c937c871"
+  },
+  {
+    "component": "paired_block_bootstrap.csv",
+    "identical_to_previous_upload": true,
+    "sha256": "13d5730989a5c67a78391097193b1d29ea3a3f2fc024443447825538df63e334"
+  }
+]

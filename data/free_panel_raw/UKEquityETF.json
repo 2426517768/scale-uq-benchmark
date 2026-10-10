@@ -1,0 +1,52 @@
+{
+  "id": "UKEquityETF",
+  "ticker": "EWU",
+  "class": "equity",
+  "instrument": "iShares MSCI United Kingdom ETF; US-listed USD market price, not FTSE 100",
+  "synthetic": false,
+  "sha256": "79297a26799d33de8d70a8144f624731f09deb8ea3e2e33c6a4d73f3c86fc1f5",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "UKEquityETF",
+    "instrument": "iShares MSCI United Kingdom ETF; US-listed USD market price, not FTSE 100",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "EWU",
+    "affine_qfq_max_abs_residual": 4.817500000342534e-05,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2005-01-03",
+        "factor": 2.0
+      },
+      {
+        "date": "2016-11-07",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "ed1348a0bca7d207ef8dceb52a423624d29824d7bea78a52ddd73f2ebeb7c43b",
+      "qfq": "7111ffefb6f9dbea3c1910a10a532a40e1c6c86e576873e4360a21c806794b1f",
+      "qfq_factors": "bc0b970740347e5e12ab9c64883fae9a016591ed2a084d30b2ad829ccc91310b"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/UKEquityETF.csv",
+    "candidate_sha256": "79297a26799d33de8d70a8144f624731f09deb8ea3e2e33c6a4d73f3c86fc1f5"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

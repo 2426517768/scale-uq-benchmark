@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "evidence_sha256": "2fba1c57b36e40afee52dd1012aec895761b4fe45ebe2cb50a2245e25bac9192",
+  "frozen_raw_hashes_checked": 13,
+  "exporter_recorded_prediction_hashes": 220,
+  "period_checks": [
+    {
+      "split": "historical",
+      "union_observation_dates": 781,
+      "target_observations_per_seed": 9108,
+      "maximum_realized_return_difference_pct": 4.747736426224947e-09,
+      "SCALE_R_nosim_daily_statistics_exactly_equal": {
+        "mse": true,
+        "wis": true,
+        "coverage90": true,
+        "quantile_hits": true
+      }
+    },
+    {
+      "split": "recent",
+      "union_observation_dates": 781,
+      "target_observations_per_seed": 9055,
+      "maximum_realized_return_difference_pct": 4.285716670437978e-09,
+      "SCALE_R_nosim_daily_statistics_exactly_equal": {
+        "mse": true,
+        "wis": true,
+        "coverage90": true,
+        "quantile_hits": true
+      }
+    }
+  ],
+  "exporter_recorded_full_column_comparisons": 10,
+  "exporter_recorded_comparison_rows_including_source": 98355,
+  "scope": "Daily sufficient statistics independently checked against frozen realized returns; full quantile-column equality is reported by the exporter, not separately reconstructed here."
+}

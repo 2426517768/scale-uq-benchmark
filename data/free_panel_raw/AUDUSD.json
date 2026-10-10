@@ -1,0 +1,37 @@
+{
+  "id": "AUDUSD",
+  "ticker": "ECB:AUDUSD",
+  "class": "fx",
+  "instrument": "USD per AUD; ECB reference/cross rate, not a market closing quote",
+  "synthetic": false,
+  "sha256": "ad134e6fc27233bf0ad2420b03eccdc54035db45a08652d26c75c6dde6a53584",
+  "provider": "European Central Bank official historical CSV",
+  "audit_record": {
+    "market": "AUDUSD",
+    "instrument": "USD per AUD; ECB reference/cross rate, not a market closing quote",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "European Central Bank official historical CSV",
+    "ecb_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.zip",
+    "ecb_download_sha256": "ca1e7b8e4ab0223a4c754edf53e531c12ea4a5ba95d6c301eb7d44716fd75064",
+    "price_basis": "daily reference/cross rate; not market close",
+    "intraday_ohlcv_available": false,
+    "formula": "USD per EUR / AUD per EUR",
+    "rows": 4609,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 772,
+      "recent_test": 766
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/AUDUSD.csv",
+    "candidate_sha256": "ad134e6fc27233bf0ad2420b03eccdc54035db45a08652d26c75c6dde6a53584"
+  },
+  "adjustment": "ECB daily euro reference rates and same-date cross rates",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

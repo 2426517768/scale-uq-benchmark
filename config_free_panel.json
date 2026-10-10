@@ -1,0 +1,172 @@
+{
+  "version": "free-panel-frozen-2.0",
+  "download_start": "2008-01-01",
+  "download_end_exclusive": "2026-01-01",
+  "window": 60,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "splits": [
+    {
+      "id": "historical",
+      "train_start": "2010-01-01",
+      "train_end": "2018-12-31",
+      "val_start": "2019-01-01",
+      "val_end": "2019-12-31",
+      "test_start": "2020-01-01",
+      "test_end": "2022-12-31"
+    },
+    {
+      "id": "recent",
+      "train_start": "2013-01-01",
+      "train_end": "2021-12-31",
+      "val_start": "2022-01-01",
+      "val_end": "2022-12-31",
+      "test_start": "2023-01-01",
+      "test_end": "2025-12-31"
+    }
+  ],
+  "markets": [
+    {
+      "id": "SP500ETF",
+      "ticker": "SPY",
+      "class": "equity",
+      "source": true,
+      "instrument": "SPDR S&P 500 ETF Trust; USD market price, split-adjusted, cash distributions excluded"
+    },
+    {
+      "id": "UKEquityETF",
+      "ticker": "EWU",
+      "class": "equity",
+      "instrument": "iShares MSCI United Kingdom ETF; US-listed USD market price, not FTSE 100"
+    },
+    {
+      "id": "JapanEquityETF",
+      "ticker": "EWJ",
+      "class": "equity",
+      "instrument": "iShares MSCI Japan ETF; US-listed USD market price, not Nikkei 225"
+    },
+    {
+      "id": "CSI300",
+      "ticker": "000300.SS",
+      "class": "equity",
+      "instrument": "CSI 300 price index"
+    },
+    {
+      "id": "USTreasuryETF",
+      "ticker": "IEF",
+      "class": "fixed_income",
+      "instrument": "US 7-10 year Treasury ETF, adjusted prices; not a yield series; split-adjusted price returns, cash distributions excluded"
+    },
+    {
+      "id": "USAggregateBondETF",
+      "ticker": "AGG",
+      "class": "fixed_income",
+      "instrument": "iShares Core US Aggregate Bond ETF; not German government bonds"
+    },
+    {
+      "id": "GoldETF",
+      "ticker": "GLD",
+      "class": "commodity",
+      "instrument": "Gold ETF proxy, adjusted prices; split-adjusted price returns, cash distributions excluded"
+    },
+    {
+      "id": "OilETF",
+      "ticker": "USO",
+      "class": "commodity",
+      "instrument": "Oil futures fund proxy, adjusted prices; not a spot WTI series; split-adjusted price returns, cash distributions excluded"
+    },
+    {
+      "id": "CopperETF",
+      "ticker": "CPER",
+      "class": "commodity",
+      "instrument": "Copper futures fund proxy, adjusted prices; split-adjusted price returns, cash distributions excluded"
+    },
+    {
+      "id": "EURUSD",
+      "ticker": "ECB:EURUSD",
+      "class": "fx",
+      "instrument": "USD per EUR; ECB reference/cross rate, not a market closing quote"
+    },
+    {
+      "id": "GBPUSD",
+      "ticker": "ECB:GBPUSD",
+      "class": "fx",
+      "instrument": "USD per GBP; ECB reference/cross rate, not a market closing quote"
+    },
+    {
+      "id": "USDJPY",
+      "ticker": "ECB:USDJPY",
+      "class": "fx",
+      "instrument": "JPY per USD; ECB reference/cross rate, not a market closing quote"
+    },
+    {
+      "id": "AUDUSD",
+      "ticker": "ECB:AUDUSD",
+      "class": "fx",
+      "instrument": "USD per AUD; ECB reference/cross rate, not a market closing quote"
+    }
+  ],
+  "training": {
+    "hidden": 64,
+    "dropout": 0.2,
+    "epochs": 50,
+    "patience": 7,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "mc_samples": 20,
+    "ensemble_members": 5,
+    "threads": 6,
+    "min_delta": 0.0001,
+    "pgd_steps": 3,
+    "epsilon": 0.1,
+    "noise_sd": 0.05,
+    "mixup_alpha": 0.2,
+    "evidential_reg": 0.01
+  },
+  "scale": {
+    "k": 16,
+    "bank_size": 512,
+    "blend_self": 0.5,
+    "entropy_weight": 0.01,
+    "kl_weight": 0.001,
+    "calibration_weight": 0.1,
+    "similarity_threshold": 0.9,
+    "similarity_weight": 5.0
+  },
+  "analysis": {
+    "bootstrap_reps": 1000,
+    "block_days": 20,
+    "online_lr": 0.01,
+    "stress_windows": [
+      {
+        "id": "covid",
+        "start": "2020-02-20",
+        "end": "2020-04-30"
+      },
+      {
+        "id": "rates_2022",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      }
+    ]
+  },
+  "feature_mode": "close_only",
+  "feature_count": 28,
+  "protocol": {
+    "status": "frozen_real_data; research outcomes not yet computed",
+    "etf_return_basis": "split-adjusted price returns, excluding cash distributions",
+    "fx_basis": "ECB daily euro reference rates and same-date cross rates",
+    "fx_ohlcv": "no intraday OHLC or traded volume; OHLC placeholders equal reference rate; Volume=0",
+    "transfer": "one US-listed SPY ETF source, twelve target series; US-listed regional ETFs are USD denominated",
+    "source_index_replaced": true,
+    "Germany_bond_replaced": true,
+    "quality_review": "OHLC anomalies retained in source audit; OHLCV are excluded from all predictors"
+  }
+}

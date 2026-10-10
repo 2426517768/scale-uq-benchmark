@@ -1,0 +1,48 @@
+{
+  "id": "USAggregateBondETF",
+  "ticker": "AGG",
+  "class": "fixed_income",
+  "instrument": "iShares Core US Aggregate Bond ETF; not German government bonds",
+  "synthetic": false,
+  "sha256": "71509bf77c28ead02d553e1fe6e1ce60625fc2f934aad1c5f7c153568c56aaa5",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "USAggregateBondETF",
+    "instrument": "iShares Core US Aggregate Bond ETF; not German government bonds",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "AGG",
+    "affine_qfq_max_abs_residual": 4.996299999504572e-05,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2005-01-03",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "3ddf378d3bdac462131d2df18bb6a3129d8f63ae29f3db6645d847c5d9f735e4",
+      "qfq": "f26c60479d05f9c40c73ea1ed650fada6759dc81a0bc2692a0dab21974b82fcd",
+      "qfq_factors": "9563671a27cf968dc9472160cf2447dfab31967298ab1ddfcaf3c4bc573ddebe"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/USAggregateBondETF.csv",
+    "candidate_sha256": "71509bf77c28ead02d553e1fe6e1ce60625fc2f934aad1c5f7c153568c56aaa5"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

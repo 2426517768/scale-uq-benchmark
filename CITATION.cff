@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "SCALE uncertainty quantification benchmark for daily financial returns"
+version: 1.0.0
+date-released: 2026-10-10
+license: MIT
+authors:
+  - family-names: Ouyang
+    given-names: Wendi
+    email: wendiouyang@link.cuhk.edu.cn
+    affiliation: "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen"
+  - family-names: Ren
+    given-names: Zhengze
+    affiliation: "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen"
+  - family-names: Zheng
+    given-names: Xuanxue
+    affiliation: "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen"
+  - family-names: Xu
+    given-names: Ziyue
+    affiliation: "School of Management and Economics, The Chinese University of Hong Kong, Shenzhen"
+preferred-citation:
+  type: article
+  title: "Uncertainty quantification for daily financial returns under cross-asset transfer: A source-only benchmark"
+  authors:
+    - family-names: Ouyang
+      given-names: Wendi
+    - family-names: Ren
+      given-names: Zhengze
+    - family-names: Zheng
+      given-names: Xuanxue
+    - family-names: Xu
+      given-names: Ziyue
+  journal: "PLOS ONE"
+  year: 2026
+  notes: "Submitted manuscript"

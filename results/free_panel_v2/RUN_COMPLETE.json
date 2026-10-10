@@ -1,0 +1,11 @@
+{
+  "forecast_files": 220,
+  "main_configurations": 16,
+  "diagnostic_configurations": 6,
+  "target_markets": 12,
+  "seeds": 5,
+  "time_splits": 2,
+  "synthetic": false,
+  "analysis_complete": true,
+  "results_origin": "new experiments only"
+}

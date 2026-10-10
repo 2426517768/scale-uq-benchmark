@@ -1,0 +1,16 @@
+Results, evidence, and supporting tables
+
+The files in results/, evidence/, and paper/*.xlsx were produced by the authors
+and are licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0). To view a copy of this license, visit
+https://creativecommons.org/licenses/by/4.0/
+
+Copyright (c) 2026 Wendi Ouyang, Zhengze Ren, Xuanxue Zheng, and Ziyue Xu
+
+Third-party data
+
+The exchange-rate series in data/free_panel_raw/ (EURUSD, GBPUSD, USDJPY,
+AUDUSD) are derived from the euro foreign exchange reference rates published
+by the European Central Bank. Source: ECB. The cross rates were computed by
+the authors as described in data/README.md. They are not covered by the
+CC BY 4.0 license above; reuse is subject to the ECB's own terms.

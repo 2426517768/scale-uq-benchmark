@@ -1,0 +1,55 @@
+{
+  "id": "SP500ETF",
+  "ticker": "SPY",
+  "class": "equity",
+  "source": true,
+  "instrument": "SPDR S&P 500 ETF Trust; USD market price, split-adjusted, cash distributions excluded",
+  "synthetic": false,
+  "sha256": "37cb688532f9015b3b4237898e80539c0504acacefc2422a9194df352d91f3a0",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "SP500ETF",
+    "instrument": "SPDR S&P 500 ETF Trust; USD market price, split-adjusted, cash distributions excluded",
+    "status": "candidate_review_required",
+    "source": true,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "SPY",
+    "affine_qfq_max_abs_residual": 5.000000010113581e-05,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2001-01-02",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [
+      "2015-03-30"
+    ],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "0eb6a46efd15e3d1bcffec5f4e0c350533cae84e7368ff3ac0777725a7036f45",
+      "qfq": "2d701ae81e0da30f8ea6c7147eb35ec2dc9dd8d5da4e2dd917f32e6bd0d26ad9",
+      "qfq_factors": "e499f60f1169062c8120ed62c5b3c49d3a4316793c3d30bf3e9a40051ea1c41a"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_train": 2263,
+      "historical_val": 252,
+      "historical_test": 756,
+      "recent_train": 2266,
+      "recent_val": 251,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/SP500ETF.csv",
+    "candidate_sha256": "37cb688532f9015b3b4237898e80539c0504acacefc2422a9194df352d91f3a0"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

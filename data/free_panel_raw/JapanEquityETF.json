@@ -1,0 +1,52 @@
+{
+  "id": "JapanEquityETF",
+  "ticker": "EWJ",
+  "class": "equity",
+  "instrument": "iShares MSCI Japan ETF; US-listed USD market price, not Nikkei 225",
+  "synthetic": false,
+  "sha256": "bfb6bc7e6a2dbcde03ef3459128029807331ed575b9c482f5939ac13bc9da6af",
+  "provider": "Sina via AKShare",
+  "audit_record": {
+    "market": "JapanEquityETF",
+    "instrument": "iShares MSCI Japan ETF; US-listed USD market price, not Nikkei 225",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Sina via AKShare",
+    "provider_symbol": "EWJ",
+    "affine_qfq_max_abs_residual": 4.812840000312235e-05,
+    "price_basis": "split-only; additive cash adjustments excluded; not total return",
+    "factor_changes": [
+      {
+        "date": "2005-01-03",
+        "factor": 4.0
+      },
+      {
+        "date": "2016-11-07",
+        "factor": 1.0
+      }
+    ],
+    "bad_ohlc_dates": [],
+    "manual_adjustment_review_required": true,
+    "response_hashes": {
+      "unadjusted": "cd733f88415ec36f0fdcd73d0e334def2ae7c540568510f8854d02b15f0ee02a",
+      "qfq": "faa6c1e279dea761a2193c646dbec3e46bff2298ad65ca95a5cc2f7570fe52c2",
+      "qfq_factors": "225fae1f674b02333ee92eb324b257d2d9b075ac53079d46125139af02de6245"
+    },
+    "rows": 4528,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 756,
+      "recent_test": 752
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/JapanEquityETF.csv",
+    "candidate_sha256": "bfb6bc7e6a2dbcde03ef3459128029807331ed575b9c482f5939ac13bc9da6af"
+  },
+  "adjustment": "split-adjusted price returns, excluding cash distributions",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}

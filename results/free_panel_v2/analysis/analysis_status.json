@@ -1,0 +1,20 @@
+{
+  "prediction_files": 220,
+  "completed": true,
+  "source_market": "SP500ETF",
+  "target_markets": [
+    "AUDUSD",
+    "CSI300",
+    "CopperETF",
+    "EURUSD",
+    "GBPUSD",
+    "GoldETF",
+    "JapanEquityETF",
+    "OilETF",
+    "UKEquityETF",
+    "USAggregateBondETF",
+    "USDJPY",
+    "USTreasuryETF"
+  ],
+  "scope": "new implementation; this report does not import old manuscript results"
+}

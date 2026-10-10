@@ -1,0 +1,35 @@
+{
+  "id": "CSI300",
+  "ticker": "000300.SS",
+  "class": "equity",
+  "instrument": "CSI 300 price index",
+  "synthetic": false,
+  "sha256": "1a2455678ce5bef7c38ab702dd86ec31430657da4fa5af7805bffda8ac0d00bb",
+  "provider": "Eastmoney via AKShare; previously acquired verified cache",
+  "audit_record": {
+    "market": "CSI300",
+    "instrument": "CSI 300 price index",
+    "status": "candidate_review_required",
+    "source": false,
+    "promoted_to_formal": false,
+    "provider": "Eastmoney via AKShare; previously acquired verified cache",
+    "response_hashes": {
+      "index": "34d33fc16173de88abe0243b09bcf1ca8a26ba84250048f37c18270641ac8c98"
+    },
+    "rows": 4376,
+    "first": "2008-01-02",
+    "last": "2025-12-31",
+    "coverage_ok": true,
+    "coverage_issues": [],
+    "period_counts": {
+      "historical_test": 728,
+      "recent_test": 727
+    },
+    "moves_gt_50pct": 0,
+    "candidate": "candidates/CSI300.csv",
+    "candidate_sha256": "1a2455678ce5bef7c38ab702dd86ec31430657da4fa5af7805bffda8ac0d00bb"
+  },
+  "adjustment": "CSI300 price index",
+  "frozen_utc": "2026-09-30",
+  "raw_dataset": "free-panel-frozen-2.0"
+}
