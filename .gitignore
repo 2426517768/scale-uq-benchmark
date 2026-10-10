@@ -1,0 +1,33 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.mpl_cache/
+environment_lock.txt
+
+# rebuilt or regenerated data (see data/README.md)
+data/free_panel_prepared/
+data/free_panel_audit/
+data/free_data_audit/
+FREE_DATA_AUDIT.zip
+FREE_DATA_RECOVERY.zip
+FREE_PANEL_AUDIT.zip
+*.tmp
+
+# withheld third-party price series (do not commit)
+data/free_panel_raw/SP500ETF.csv
+data/free_panel_raw/UKEquityETF.csv
+data/free_panel_raw/JapanEquityETF.csv
+data/free_panel_raw/USTreasuryETF.csv
+data/free_panel_raw/USAggregateBondETF.csv
+data/free_panel_raw/GoldETF.csv
+data/free_panel_raw/OilETF.csv
+data/free_panel_raw/CopperETF.csv
+data/free_panel_raw/CSI300.csv
+
+# new runs and local outputs
+results/rerun/
+results/*_RESULTS.zip
+out/
+verification/
+RUN.lock
