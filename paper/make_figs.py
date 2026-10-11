@@ -77,7 +77,7 @@ def panel_tag(ax, tag):
 OFFS = {
     "historical": {"EWMAGaussian": (8, -8), "GARCH-Norm": (10, -2), "RollingEmpirical": (10, 4),
                    "SCALE-R": (-14, 14), "Evidential": (12, 14), "Isotonic": (-12, -16), "SplitConformal": (8, 14),
-                   "MCDropout": (62, -16), "OnlineQuantile": (14, -14), "DeepEnsembles": (-14, -12)},
+                   "MCDropout": (62, -16), "OnlineQuantile": (-14, -32), "DeepEnsembles": (-24, 2)},
     "recent": {"EWMAGaussian": (8, -8), "OnlineQuantile": (-6, 16), "RollingEmpirical": (-8, -14),
                "GARCH-Norm": (-4, -18), "DeepEnsembles": (14, -14), "MCDropout": (-34, 22),
                "Isotonic": (14, 18), "SplitConformal": (16, -16), "SCALE-R": (-16, 12), "Evidential": (14, 10)},
@@ -102,6 +102,7 @@ for ax, (sp, title), tag in zip(axes, SPLITS, "AB"):
     ax.set_ylabel("Normalized weighted interval score (NWIS, lower is better)")
     ax.text(0.98, 0.98, f"Test period {title}", transform=ax.transAxes, ha="right", va="top", fontsize=7.5)
     ax.margins(x=0.12 if sp == "historical" else 0.22, y=0.10)
+    ax.set_xlim(left=0.0)  # keep left-hand labels inside the axes
     panel_tag(ax, tag)
 handles = [Line2D([], [], marker=v[2], ls="", color=v[0], markeredgecolor="white", markersize=6, label=k)
            for k, v in FAM.items()]

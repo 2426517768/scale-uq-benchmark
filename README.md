@@ -32,6 +32,7 @@ All files below are in `results/free_panel_v2/analysis/` unless stated otherwise
 | Table 1 (main results) and Table 3 (SCALE-R diagnostics) | `macro_mean_sd.csv` (per-seed values in `macro_per_seed.csv`) |
 | Table 2 (predefined paired comparisons) | `paired_block_bootstrap.csv` |
 | Table 4 (COVID-19 stress window) | `year_and_stress_metrics.csv`, rows with `period == "covid"` |
+| Second predefined stress window (calendar year 2022, reported in the Results text) | `year_and_stress_metrics.csv`, rows with `period == "rates_2022"` |
 | Per-target results and target counts | `metrics_wide.csv`, `metrics_long.csv` |
 | Leave-one-asset-class-out sensitivity | `leave_one_asset_class_out.csv` |
 | Figs 2 and 3 | `paper/make_figs.py` applied to `metrics_wide.csv` |
