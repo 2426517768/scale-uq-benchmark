@@ -2,7 +2,7 @@
 
 Code, frozen protocol, results, and verification files for the manuscript
 
-> Ouyang W, Ren Z, Zheng X, Xu Z. Uncertainty quantification for daily financial returns under cross-asset transfer: A source-only benchmark. Submitted to PLOS ONE.
+> Ouyang W, Ren Z, Zheng X, Xu Z. Uncertainty quantification for daily financial returns under cross-asset transfer: A benchmark of source-trained and adaptive estimators. Submitted to PLOS ONE.
 
 The benchmark trains every learned configuration on one source series (SPY) and evaluates it without fine-tuning on twelve target series (EWU, EWJ, CSI 300, IEF, AGG, GLD, USO, CPER, EUR/USD, GBP/USD, USD/JPY, and AUD/USD). Two chronological splits are used: train 2010–2018, validate 2019, and test 2020–2022; and train 2013–2021, validate 2022, and test 2023–2025. There are sixteen main configurations and six SCALE-R diagnostic variants, each run with five seeds. The full protocol is in `config_free_panel.json` (panel version `free-panel-frozen-2.0`) and is described in the Materials and methods section of the paper.
 
